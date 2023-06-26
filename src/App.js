@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const logo="src/image/WhatsApp.svg.webp";
   return (
     <div className="App">
       <header className="App-header">
