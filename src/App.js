@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="src\image\create plant  innovation logo design.png" className="App-logo" alt="logo" />
+        <img src="src/image/logo.png" className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
