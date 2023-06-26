@@ -1,17 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="src\image\create plant  innovation logo design.png" className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
-          href="src\image\create plant  innovation logo design.png"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
