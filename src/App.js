@@ -9,8 +9,7 @@ function App() {
   return (
 <BrowserRouter>
     <div className="App">
- 
-      <header className="header">
+      <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
            <Route path="/wtsapp" element={<Wtspp />}></Route>
