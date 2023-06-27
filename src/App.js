@@ -5,6 +5,9 @@ import Home from './Home';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Wtspp from './Wtspp';
 import Phone from './Phone';
+import Wtsappdetail from './Wtsappdetail';
+import Phoneform from './Phoneform';
+import Pasting from './Pasting';
 
 function App() {
   return (
@@ -13,10 +16,7 @@ function App() {
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
-           <Route path="/wtsapp" element={<Wtspp />}>
-<Route path="wtsappdetail/:id" element={<Phone />}></Route>
-
-           </Route>
+          <Route path="/pasting" element={<Pasting/>}></Route>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
       </header>

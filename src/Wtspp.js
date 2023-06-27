@@ -13,7 +13,7 @@ const Wtspp = () => {
     <section>
 <img className="wtsapp-icon"src={logo}></img>
     <div className='wtsappLayer'>
-        <Wtsappdetail />
+        {/* <Wtsappdetail /> */}
     </div>
     </section>
     </div>

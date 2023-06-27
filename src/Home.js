@@ -9,7 +9,7 @@ const Home = () => {
        <p>
         Welcome to Wtsapp Clone
        </p>
-       <Link to="/wtsapp ">WtsappClone</Link>
+       <Link to="/pasting ">WtsappClone</Link>
       </header>
     </div>
 

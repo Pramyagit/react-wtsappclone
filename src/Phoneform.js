@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import Wtspp from './Wtspp'
 
-const Phone = () => {
+const Phoneform = () => {
   return (
-    <div>
-<Link to="/phoneform">Link with phone number</Link>
-{/* <form>
+    <div> 
+      <Wtspp/>
+        <form>
     <h3>Enter Phone Number</h3>
     <p>Select a country and enter your wtsapp phone number</p>
 <select>
@@ -14,9 +14,9 @@ const Phone = () => {
     <option>Uk</option>
 </select>
 <input type="numbers" value="+91" max="10"></input>
-</form> */}
+</form>
     </div>
   )
 }
 
-export default Phone
+export default Phoneform

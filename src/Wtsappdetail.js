@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import { HiDotsVertical } from "react-icons/hi";
 import { FcSettings} from "react-icons/fc";
+import Phone from './Phone';
 // import wtsapp from './wtsapp.svg';
 const Wtsappdetail = () => {
   return (
@@ -22,8 +23,7 @@ const Wtsappdetail = () => {
       </div>
       <div className='links'>
 <hr></hr>
-
-<Link to="/phone">Link with phone number</Link>
+<Phone />
     </div>
 
     </div>
