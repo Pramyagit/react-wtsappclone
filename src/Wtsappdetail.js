@@ -15,7 +15,7 @@ const Wtsappdetail = () => {
 </ul>
      </section>
 <section class="qrcode">
-  <img src=""alt='image'></img>
+  <img src="src/image/qrcode.png"alt='image'></img>
 </section>
 {/* <hr></hr> */}
 {/* <Link to="/phone">Link with phone number</Link> */}
