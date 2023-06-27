@@ -71,3 +71,24 @@
   top:45px;
   left:39%;
 }
+/* wtsappDetail */
+.detail{
+  display:flex;
+}
+.condition{
+  display:flex;
+  flex-direction: column;
+}
+.condition h2{
+  margin:10px;
+}
+.condition .Lists{
+  font-size:20px;
+  text-decoration: none;
+list-style-type:none;
+
+}
+.Lists li{
+  list-style: decimal;
+  
+}
