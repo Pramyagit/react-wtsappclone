@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import Nav from './Nav';
-import React,{Link} from 'react';
+import React from 'react';
+import Nopage from './Nopage';
+import Home from './Home';
+import { Routes,Route, BrowserRouter } from 'react-router-dom';
+import Wtspp from './Wtspp';
 
 function App() {
   return (
-
-
 <BrowserRouter>
     <div className="App">
-     <Nav />
-      <header className="App-header">
+ 
+      <header className="header">
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/about" element={<About/>}></Route>
-          <Route path="/postpage"  element={<Layout/>}>
-               <Route index element={<PostPage/>}/>
-               <Route path=":id"  element={<Post/>}/>
-          </Route>
+          <Route path="/" element={<Home />}></Route>
+           <Route path="/wtsapp" element={<Wtspp />}></Route>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
       </header>
