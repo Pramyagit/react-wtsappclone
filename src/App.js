@@ -4,6 +4,7 @@ import Nopage from './Nopage';
 import Home from './Home';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Wtspp from './Wtspp';
+import Phone from './Phone';
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
-           <Route path="/wtsapp" element={<Wtspp />}></Route>
+           <Route path="/wtsapp" element={<Wtspp />}>
+<Route path="wtsappdetail/:id" element={<Phone />}></Route>
+
+           </Route>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
       </header>

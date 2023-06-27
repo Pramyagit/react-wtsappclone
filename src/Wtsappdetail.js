@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { HiDotsVertical } from "react-icons/hi";
 import { FcSettings} from "react-icons/fc";
+// import wtsapp from './wtsapp.svg';
 const Wtsappdetail = () => {
   return (
     <div class="detail">
-     <section className='condition'>
+      <div  className='condition'>
+     <section>
       <h2>Use WhatsApp on your computer</h2>
 <ul className='Lists'>
   <li>Open WhatsApp on your phone</li><br></br>
@@ -15,12 +17,17 @@ const Wtsappdetail = () => {
 </ul>
      </section>
 <section class="qrcode">
-  <img src="src/image/qrcode.png"alt='image'></img>
+  <img src="../image/qrcode.png" alt='images'></img>
 </section>
-{/* <hr></hr> */}
-{/* <Link to="/phone">Link with phone number</Link> */}
+      </div>
+      <div className='links'>
+<hr></hr>
+
+<Link to="/phone">Link with phone number</Link>
+    </div>
 
     </div>
+ 
   )
 }
 
