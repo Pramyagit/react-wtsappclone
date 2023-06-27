@@ -4,9 +4,7 @@ import { Link, Outlet } from 'react-router-dom'
 const Phone = () => {
   return (
     <div>
-<Link to="/phoneform">Link with phone number</Link>
-
-
+<Link to="/pasting/phoneform">Link with phone number</Link>
     </div>
   )
 }
