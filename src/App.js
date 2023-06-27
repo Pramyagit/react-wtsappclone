@@ -3,11 +3,9 @@ import React from 'react';
 import Nopage from './Nopage';
 import Home from './Home';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
-import Wtspp from './Wtspp';
-import Phone from './Phone';
-import Wtsappdetail from './Wtsappdetail';
-import Phoneform from './Phoneform';
+
 import Pasting from './Pasting';
+import Phoneform from './Phoneform';
 
 function App() {
   return (
@@ -16,7 +14,10 @@ function App() {
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/pasting" element={<Pasting/>}></Route>
+          <Route path="/pasting" >
+          <Route index element={<Pasting/>}/>
+              <Route path=":id" element={<Phoneform/>}/>
+          </Route>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
       </header>
