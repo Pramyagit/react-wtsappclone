@@ -89,7 +89,7 @@ list-style-type:none;
 }
 .Lists li{
   list-style: decimal;
-
+text-align: left;
 }
 /* phoneform */
 .form{
@@ -124,12 +124,12 @@ select,input{
   width:200px;
   height:200px;
   position: absolute;
-  top:20px;
+  top:50px;
+  right:130px;
   margin:2px;
 }
 .Wtsicon{
   position: absolute;
   top:80px;
   margin-left:72px;
-  
 }
