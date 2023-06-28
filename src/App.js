@@ -1,16 +1,24 @@
 import './App.css';
-import React, {useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import Nopage from './Nopage';
 import Home from './Home';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Pasting from './Pasting';
 import Phoneform from './Phoneform';
-function App() {
+import QRCode from 'qrcode';
 
-  const[option,setOption]=useState('');
-  const[phoneNo,setPhoneNo]=useState('');
+function App({text}) {
+  // qrcode
+const[src,setSrc]=useState('');
+useEffect(()=>{
+QRCode.toDataURL(text).then((data)=>{
+setSrc(data);
+})
+},[]);
 
 
+const[option,setOption]=useState('');
+const[phoneNo,setPhoneNo]=useState('');
 const handleSubmit=()=>{
   setPhoneNo('')
 }
@@ -27,7 +35,9 @@ const handlePhone=(e)=>{
   return (
 <BrowserRouter>
     <div className="App">
-      
+      <div>
+        <img src={src}/>
+      </div>
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
