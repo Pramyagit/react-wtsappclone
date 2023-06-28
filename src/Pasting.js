@@ -1,13 +1,13 @@
 import React from 'react'
 import Wtspp from './Wtspp'
 import Wtsappdetail from './Wtsappdetail'
-const Pasting = () => {
+const Pasting = ({src}) => {
   return (
       <div>
         <Wtspp />
         <div className='wtsappLayer'>
         <Wtsappdetail  
-        text="helo" />
+        src={src} />
     </div>
         </div>
   )

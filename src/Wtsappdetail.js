@@ -19,7 +19,7 @@ const Wtsappdetail = ({src}) => {
 <section className="qrcode">
 <Qrcode 
     src={src}/>
-  <img src={src} alt='images'></img>
+  {/* <img src={src} alt='images'></img> */}
 </section>
       </div>
       <div className='links'>

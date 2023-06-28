@@ -31,11 +31,13 @@ const handlePhone=(e)=>{
 return (
 <BrowserRouter>
     <div className="App">
+     {/* <Qrcode src={src} /> */}
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/pasting" >
           <Route index element={<Pasting
+          src={src} 
           />}/>
               <Route path=":id" element={<Phoneform
               handleSubmit={handleSubmit}
