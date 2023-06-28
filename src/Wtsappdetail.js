@@ -3,7 +3,6 @@ import React from 'react'
 import { HiDotsVertical } from "react-icons/hi";
 import { FcSettings} from "react-icons/fc";
 import Phone from './Phone';
-// import wtsapp from './wtsapp.svg';
 const Wtsappdetail = ({src}) => {
   return (
     <div className="detail">

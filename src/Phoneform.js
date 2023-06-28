@@ -16,7 +16,7 @@ const Phoneform = ({phoneNo,handleSubmit,handleSelection,handlePhone}) => {
     <option value="Uk">Uk</option>
 </select>
 <input type="numbers" value={phoneNo} placeholder='+91' max="10" onChange={handlePhone}></input>
-<button className="btnForm" type="submit" value=""><Link to="/wtspp">Next</Link></button>
+<button className="btnForm" type="submit" value=""><Link to="/">Next</Link></button>
 </form>
 <div className='Qrcodes'>
 <Link to="/pasting">Link with QRcode</Link>

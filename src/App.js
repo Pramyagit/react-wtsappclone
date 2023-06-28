@@ -3,10 +3,8 @@ import React, {useState } from 'react';
 import Nopage from './Nopage';
 import Home from './Home';
 import { Routes,Route, BrowserRouter } from 'react-router-dom';
-
 import Pasting from './Pasting';
 import Phoneform from './Phoneform';
-
 function App() {
 
   const[option,setOption]=useState('');
@@ -29,6 +27,7 @@ const handlePhone=(e)=>{
   return (
 <BrowserRouter>
     <div className="App">
+      
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -46,6 +45,7 @@ const handlePhone=(e)=>{
           </Route>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
+       
       </header>
     </div>
         </BrowserRouter>
