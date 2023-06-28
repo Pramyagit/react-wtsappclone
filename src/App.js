@@ -6,16 +6,12 @@ import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Pasting from './Pasting';
 import Phoneform from './Phoneform';
 import QRCode from 'qrcode';
-
 function App({text}) {
-  // qrcode
 const[src,setSrc]=useState('');
 useEffect(()=>{
-QRCode.toDataURL(text).then((data)=>{
-setSrc(data);
-})
+  QRCode.toDataURL(text).then((data)=>
+  setSrc(data))
 },[]);
-
 
 const[option,setOption]=useState('');
 const[phoneNo,setPhoneNo]=useState('');
@@ -32,17 +28,15 @@ const handlePhone=(e)=>{
   console.log(e.target.value)
 }
 
-  return (
+return (
 <BrowserRouter>
     <div className="App">
-      <div>
-        <img src={src}/>
-      </div>
       <header className="Appheader">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/pasting" >
-          <Route index element={<Pasting/>}/>
+          <Route index element={<Pasting
+          />}/>
               <Route path=":id" element={<Phoneform
               handleSubmit={handleSubmit}
               option={option}
@@ -55,7 +49,6 @@ const handlePhone=(e)=>{
           </Route>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
-       
       </header>
     </div>
         </BrowserRouter>

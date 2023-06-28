@@ -7,7 +7,7 @@ const Pasting = () => {
         <Wtspp />
         <div className='wtsappLayer'>
         <Wtsappdetail  
-         />
+        text="helo" />
     </div>
         </div>
   )

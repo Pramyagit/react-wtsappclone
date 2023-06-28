@@ -1,8 +1,7 @@
 import React from 'react'
-
-const Qrcode = () => {
+function Qrcode({text}) {
   return (
-    <div>Qrcode</div>
+    <div>{text}</div>
   )
 }
 
