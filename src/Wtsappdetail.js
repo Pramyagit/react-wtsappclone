@@ -4,9 +4,9 @@ import { HiDotsVertical } from "react-icons/hi";
 import { FcSettings} from "react-icons/fc";
 import Phone from './Phone';
 // import wtsapp from './wtsapp.svg';
-const Wtsappdetail = () => {
+const Wtsappdetail = ({src}) => {
   return (
-    <div class="detail">
+    <div className="detail">
       <div  className='condition'>
      <section>
       <h2>Use WhatsApp on your computer</h2>
@@ -17,8 +17,8 @@ const Wtsappdetail = () => {
   <li>Point your phone to this screen to capture the QR code</li><br></br>
 </ul>
      </section>
-<section class="qrcode">
-  <img src="../image/qrcode.png" alt='images'></img>
+<section className="qrcode">
+  <img src={src} alt='images'></img>
 </section>
       </div>
       <div className='links'>

@@ -5,9 +5,10 @@ import Wtsappdetail from './Wtsappdetail'
 const Pasting = () => {
   return (
       <div>
-        <Wtspp/>
+        <Wtspp />
         <div className='wtsappLayer'>
-        <Wtsappdetail />
+        <Wtsappdetail  
+        src="../src/image/qrcode.png"/>
     </div>
         </div>
   )

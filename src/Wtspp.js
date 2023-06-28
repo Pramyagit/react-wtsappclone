@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './logo.svg';
-import Wtsappdetail from './Wtsappdetail';
+
 const Wtspp = () => {
   return (
 <div>
@@ -11,9 +11,8 @@ const Wtspp = () => {
             <div className='clones'></div>
     </section>
     <section>
-<img className="wtsapp-icon"src={logo}></img>
+<img className="wtsapp-icon" src={logo} alt="logo"></img>
     <div className='wtsappLayer'>
-        {/* <Wtsappdetail /> */}
     </div>
     </section>
     </div>
