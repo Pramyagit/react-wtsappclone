@@ -229,4 +229,64 @@ img{
   height: 100vh;
   background-color: rgb(245, 241, 241);
   border-radius:0 10px ;
+  justify-content: space-between;
+}
+.person-communicate{
+  padding:5px;
+  margin:0;
+  width:100%vw;
+  height:50px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a1a2a2;
+  border-radius:0 10px ;
+}
+.person-pro{
+  display:flex;
+  gap:10px;
+}
+.icons-pic{
+  display:flex;
+  gap:15px;
+  margin-right: 50px;
+}
+.msg-typeBox{
+  /* width:100%; */
+  background-color: #a1a2a2;
+  position: relative;
+top:457px;
+display:flex;
+width:100%;
+justify-content:center;
+align-items: center;
+gap:10px;
+}
+.type-box{
+  display: flex;
+  background-color: #c1c4c4;
+  width: 70%;
+  height:40px;
+padding:5px;
+align-items: center;
+justify-content: space-around;
+border-radius: 50px;
+gap:10px;
+cursor: pointer;
+}
+.type-box input{
+  width:400px;
+  border:none;
+  background-color: #c8cbcb;outline: none;
+}
+.type-box input:focus{
+  background-color: #f3f4f5;
+}
+.microPhone{
+  /* width:100px; */
+  padding:10px;
+  background-color: gray;
+ border:1px solid gray;
+ cursor: pointer;
+ border-radius:50%;
 }

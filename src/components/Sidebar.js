@@ -100,10 +100,6 @@ const Sidebar = ({src}) => {
    </div>
 </div>
 
-
-
-
-
 </div>
 </div>
     
