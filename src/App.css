@@ -158,6 +158,10 @@ select,input{
   height:100px;
   margin-top:20px;
 }
+img{
+  width:100px;
+  height:100px;
+}
 .detail{
   display: flex;
   flex-direction: column;

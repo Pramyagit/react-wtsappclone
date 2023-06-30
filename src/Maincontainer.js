@@ -3,11 +3,13 @@ import Sidebar from './components/Sidebar'
 import Communicate from './components/Communicate'
 
 const Maincontainer = () => {
+  const logos=<img src={'/src/image/profile.jpeg'} alt='pics'/>;
   return (
     <div className='mainContainer'>
+      
         <Sidebar
-        src=""/>
-<Communicate/>
+        src={logos}  />
+<Communicate />
     </div>
   )
 }
