@@ -1,14 +1,13 @@
 import React from 'react'
 import Sidebar from './components/Sidebar'
 import Communicate from './components/Communicate'
-
+// import image from './image/robin.jpg';
+import image from './image/profile.jpeg';
 const Maincontainer = () => {
-  const logos=<img src={'/src/image/profile.jpeg'} alt='pics'/>;
   return (
     <div className='mainContainer'>
-      
         <Sidebar
-        src={logos}  />
+        src={image}  />
 <Communicate />
     </div>
   )

@@ -152,20 +152,77 @@ select,input{
 }
 
 .profile{
-  background-color: white;
+  background-color: rgb(223, 221, 221);
   display:flex;
   width:100%;
   height:100px;
-  margin-top:20px;
+  margin-top:1px;
+  align-items: center;
+  display:flex;
+  border-radius: 10px 10px 0 0;
+  /* flex-direction: column; */
 }
 img{
-  width:100px;
-  height:100px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .detail{
+  margin-left:80px;
+  width:50%;
+  justify-content: space-between;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+.rooms{
+  background-color: #282c34;
+  height:100%vh;
+  color:rgb(255, 255, 255);
+  display:flex;
+  flex-direction: column;
+  margin:1px;
+  gap:8px;
+}
+.archive{display: flex;
+  justify-content: space-between;
+  margin:0px;
+  padding:5px;
+  color:green;
+  background-color: white;
+  border: 1px solid white;
+  border-radius:2px;
+
+}
+.chat-persons{
+  border-radius:2px;
+  border:1px solid rgb(180, 180, 180);
+  display:flex;
+  padding:2px;
+  margin:2px;
+  justify-content: space-between;
+}
+.person-detail{
+  width:100%;
+  display:flex;
+  /* flex-direction: column; */
+}
+.name{
+  position:relative;
+  top:-13px;
+  left:10px;
+}
+.msg{
+  position:relative;
+  top:10px;
+  left:-20px;
+}
+.time{
+  font-size:10px;
+  margin-top:0;
+}
+
+
 /* communicate */
 .communicate{
   width:100%;
