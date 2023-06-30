@@ -6,6 +6,7 @@ import { Routes,Route, BrowserRouter } from 'react-router-dom';
 import Pasting from './Pasting';
 import Phoneform from './Phoneform';
 import QRCode from 'qrcode';
+import Maincontainer from './Maincontainer';
 function App({text}) {
 const[src,setSrc]=useState('');
 useEffect(()=>{
@@ -49,6 +50,7 @@ return (
               handlePhone={handlePhone}
               />}/>
           </Route>
+          <Route path="/maincontainer" element={<Maincontainer/>}/>
           <Route path="*" element={<Nopage/>}></Route>
         </Routes>
       </header>
