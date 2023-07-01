@@ -18,13 +18,13 @@ const Communicate = ({src}) => {
   const MessageDiv=styled.div `
   display:flex;
   // justify-content:flex-end;
-justify-content: $(props => props.isYours?'flex-end':'flex-start');
+justify-content: ${ props => props.isYours?'flex-start':'flex-end' };
   margin:5px 16px;
   `;
 
 const Message=styled.div `
 max-width:40%;
-background:#daf8cb;
+background: ${ props => props.isYours?'#daf8cb':'white' };
 color:#303030;
 padding:8px 10px;
 font-size:16px;
@@ -52,7 +52,17 @@ margin:2px;
    </MessageDiv>
    <MessageDiv >
      <Message >
-       Hello,how are you?
+       fine...
+     </Message>
+   </MessageDiv>
+   <MessageDiv >
+     <Message >
+    what about you?
+     </Message>
+   </MessageDiv>
+   <MessageDiv isYours={true} >
+     <Message  isYours={true}>
+good....
      </Message>
    </MessageDiv>
    </MessagesBox>
