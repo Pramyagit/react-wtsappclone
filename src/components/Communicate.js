@@ -7,15 +7,22 @@ import {BsEmojiLaughingFill} from 'react-icons/bs'
 import { styled } from 'styled-components'
 
 const Communicate = ({src}) => {
-  
+  const MessagesBox=styled.div`
+  display:flex;
+  height:100%;
+  width:100%;
+  flex-direction:column;
+  overflow:scroll;
+  `;
   
   const MessageDiv=styled.div `
   display:flex;
+  // justify-content:flex-end;
+justify-content: $(props => props.isYours?'flex-end':'flex-start');
   margin:5px 16px;
-  justify-content:flex-end;
   `;
 
-const Message=styled.div`
+const Message=styled.div `
 max-width:40%;
 background:#daf8cb;
 color:#303030;
@@ -28,7 +35,7 @@ margin:2px;
     <div className='communicate'>
      <div className='person-communicate'>
          <div className='person-pro'>
-          <img src={src} alt="photos"/>
+          <img className='img' src={src} alt="photos"/>
             <p>Name</p>
           </div>
             <div className='icons-pic'>
@@ -37,20 +44,27 @@ margin:2px;
             <span><CiMenuKebab/></span>
             </div>
     </div>
-    <div className='messages-box'>
+    <MessagesBox>
    <MessageDiv isYours={true}>
      <Message isYours={true}>
        Hello,how are you?
      </Message>
-     
-      <Message isYours={true}>
-       Hello,how are you?
-     </Message>
-     <Message isYours={true}>
+   </MessageDiv>
+   <MessageDiv >
+     <Message >
        Hello,how are you?
      </Message>
    </MessageDiv>
-   </div>
+   </MessagesBox>
+{/* 
+   <div className="messageBox">
+    <div className="contain">
+      <div className="message">
+        hello,how are you?
+      </div>
+    </div>
+   </div> */}
+   
     <div className="msg-typeBox">
         <div className='type-box'>
         <BsEmojiLaughingFill/>

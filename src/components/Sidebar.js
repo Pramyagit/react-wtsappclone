@@ -7,8 +7,8 @@ const Sidebar = ({src}) => {
   return (
     <div className='sideView'>
     <div className='profile'>
-        <img src={src} alt="pic"></img>
-      <div className="detail">
+        <img className="img" src={src} alt="pic"></img>
+      <div className="details">
       <span><HiUserGroup/></span>
       <span>2</span>
       <span><BiMessageRoundedDetail/></span>
@@ -29,7 +29,7 @@ const Sidebar = ({src}) => {
 </div>
 <div className='chat-rooms'>
  <div className='chat-persons'>
-    <img src={src} alt='pic'></img>
+    <img  className="img" src={src} alt='pic'></img>
     <div className='person-detail'>
     <p className='name'>Name</p>
     <p className='msg'>hello</p>
@@ -41,7 +41,7 @@ const Sidebar = ({src}) => {
 </div>
 {/*  */}
 <div className='chat-persons'>
-    <img src={src} alt='pic'></img>
+    <img className="img"  src={src} alt='pic'></img>
     <div className='person-detail'>
     <p className='name'>Name</p>
     <p className='msg'>hello</p>
@@ -53,7 +53,7 @@ const Sidebar = ({src}) => {
 </div>
 {/*  */}
 <div className='chat-persons'>
-    <img src={src} alt='pic'></img>
+    <img  className="img" src={src} alt='pic'></img>
     <div className='person-detail'>
     <p className='name'>Name</p>
     <p className='msg'>hello</p>
@@ -65,7 +65,7 @@ const Sidebar = ({src}) => {
 </div>
 {/*  */}
 <div className='chat-persons'>
-    <img src={src} alt='pic'></img>
+    <img className="img"  src={src} alt='pic'></img>
     <div className='person-detail'>
     <p className='name'>Name</p>
     <p className='msg'>hello</p>
@@ -77,7 +77,7 @@ const Sidebar = ({src}) => {
 </div>
 
 <div className='chat-persons'>
-    <img src={src} alt='pic'></img>
+    <img  className="img" src={src} alt='pic'></img>
     <div className='person-detail'>
     <p className='name'>Name</p>
     <p className='msg'>hello</p>
@@ -89,7 +89,7 @@ const Sidebar = ({src}) => {
 </div>
 {/*  */}
 <div className='chat-persons'>
-    <img src={src} alt='pic'></img>
+    <img className="img" src={src} alt='pic'></img>
     <div className='person-detail'>
     <p className='name'>Name</p>
     <p className='msg'>hello</p>

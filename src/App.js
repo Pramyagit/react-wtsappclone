@@ -12,7 +12,7 @@ const[src,setSrc]=useState('');
 useEffect(()=>{
   QRCode.toDataURL(text).then((data)=>
   setSrc(data))
-},[]);
+},[text]);
 
 const[option,setOption]=useState('');
 const[phoneNo,setPhoneNo]=useState('');
@@ -38,8 +38,7 @@ return (
           <Route path="/" element={<Home />}></Route>
           <Route path="/pasting" >
           <Route index element={<Pasting
-          src={src} 
-          />}/>
+          src={src}  />}/>
               <Route path=":id" element={<Phoneform
               handleSubmit={handleSubmit}
               option={option}
