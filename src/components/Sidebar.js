@@ -5,8 +5,10 @@ import {CiMenuKebab} from 'react-icons/ci'
 import{BiSolidArchiveIn} from 'react-icons/bi'
 import { MdDonutLarge } from "react-icons/md";
 import { contactList } from '../data'
+import Contact from './Contact'
 
 const Sidebar = ({src}) => {
+
   return (
     <div className='sideView'>
     <div className='profile'>
@@ -31,16 +33,11 @@ const Sidebar = ({src}) => {
 <span>1</span>
 </div>
 <div className='chat-rooms'>
- <div className='chat-persons'>
-    <img  className="img" src={src} alt='pic'></img>
-    <div className='person-detail'>
-    <p className='name'>Name</p>
-    <p className='msg'>hello</p>
-  </div>
-   <div className="msg-count">
-     <p className='time'>3.30pm</p>
-     <span>1</span>
-   </div>
+  {contactList.map((userData)=>(
+    <Contact src={src} 
+    userData={userData}/>
+  ))}
+
 </div>
 
 {/* <div className='chat-persons'>
@@ -103,7 +100,7 @@ const Sidebar = ({src}) => {
    </div>
 </div> */}
 
-</div>
+
 </div>
     
   </div>

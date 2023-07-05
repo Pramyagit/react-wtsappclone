@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState } from 'react'
 import {BiRupee, BiPhoneCall, BiVideo, BiCamera } from 'react-icons/bi'
 import { CiMenuKebab } from 'react-icons/ci'
 import { HiMicrophone } from 'react-icons/hi'
@@ -7,6 +7,19 @@ import {BsEmojiLaughingFill} from 'react-icons/bs'
 import { styled } from 'styled-components'
 
 const Communicate = ({src}) => {
+  const[chat,setChat]=useState('')
+  
+  
+  const handleChange=(e)=>{
+    e.preventDefault();
+  }
+  // useEffect((e)=>{
+  //   (e.target.value)
+  // },[]);
+  
+  
+  
+  
   const MessagesBox=styled.div`
   display:flex;
   height:100%;
@@ -78,7 +91,7 @@ good....
     <div className="msg-typeBox">
         <div className='type-box'>
         <BsEmojiLaughingFill/>
-          <input type=""></input>
+          <input type="" onChange={handleChange}></input>
           <p><GrAttachment/></p>
           <p><BiRupee/></p>
           <p><BiCamera/></p>

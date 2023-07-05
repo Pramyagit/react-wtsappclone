@@ -2,38 +2,46 @@ export const contactList=[
     {
         id:1,
         name:"ramu",
-        profilePic:"src/image/prof.jpg",
+        profilePic:"image/profile.jpeg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
     }
     ,   {
         id:2,
-        name:"ramu",
-        profilePic:"src/image/prof.jpg",
+        name:"raju",
+        profilePic:"image/prof.jpg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
     }
     ,   {
         id:3,
-        name:"ramu",
-        profilePic:"src/image/prof.jpg",
+        name:"samu",
+        profilePic:"image/robin.jpg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
     },
     {
         id:4,
-        name:"ramu",
-        profilePic:"src/image/prof.jpg",
+        name:"priya",
+        profilePic:"image/prof.jpg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
     },
     {
         id:5,
-        name:"ramu",
-        profilePic:"src/image/prof.jpg",
+        name:"rasu",
+        profilePic:"image/prof.jpg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
+    },
+    {
+        id:6,
+        name:"suji",
+        profilePic:"/src/image/prof.jpg",
+        lastText:"hai amma",
+        lastTextTime:"12.02 PM"
     }
+
 
 ];
 
