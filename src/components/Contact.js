@@ -2,8 +2,8 @@ import React from 'react'
 const Contact = ({src,userData}) => {
   return (
    <div className='chat-persons'>
-    <img  className="img" src={src} alt='pic'></img>
     <div className='person-detail'>
+  <img  className="img" src={src} alt='pic'></img>
     <p className='name'>{userData.name}</p>
     <p className='msg'>{userData.lastText}</p>
   </div>
