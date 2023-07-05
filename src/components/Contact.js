@@ -1,9 +1,17 @@
 import React from 'react'
-const Contact = ({src,userData}) => {
+import contactList from './data.js';
+const Contact = ({userData}) => {
   return (
    <div className='chat-persons'>
+{
+  contactList && contactList.map((item)=>
+<div key={item.id}>
+  <img  className="img" src={contactList.profilePic} alt='pic'></img>
+  
+  </div>
+  )
+}
     <div className='person-detail'>
-  <img  className="img" src={src} alt='pic'></img>
     <p className='name'>{userData.name}</p>
     <p className='msg'>{userData.lastText}</p>
   </div>
