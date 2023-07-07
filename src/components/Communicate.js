@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React from 'react'
 import {BiRupee, BiPhoneCall, BiVideo, BiCamera } from 'react-icons/bi'
 import { CiMenuKebab } from 'react-icons/ci'
 import { HiMicrophone } from 'react-icons/hi'
@@ -7,9 +7,7 @@ import {BsEmojiLaughingFill} from 'react-icons/bs'
 import { styled } from 'styled-components'
 
 const Communicate = ({src}) => {
-  const[chat,setChat]=useState('')
-  
-  
+  // const[chat,setChat]=useState('')
   const handleChange=(e)=>{
     e.preventDefault();
   }

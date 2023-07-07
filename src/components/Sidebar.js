@@ -8,6 +8,7 @@ import { contactList } from '../data'
 import Contact from './Contact'
 
 const Sidebar = ({src}) => {
+  
 
   return (
     <div className='sideView'>
@@ -30,14 +31,14 @@ const Sidebar = ({src}) => {
 <div className="archive">
   <span><BiSolidArchiveIn/></span>
 <span>Archived</span>
-<span>1</span>
+<span class="badge">1</span>
 </div>
 <div className='chat-rooms'>
   {contactList.map((userData)=>(
-    <Contact src={src} 
+    <Contact 
+    src={src}
     userData={userData}/>
   ))}
-
 </div>
 
 {/* <div className='chat-persons'>

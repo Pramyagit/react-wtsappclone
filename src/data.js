@@ -2,35 +2,35 @@ export const contactList=[
     {
         id:1,
         name:"ramu",
-        profilePic:"image/profile.jpeg",
+        profilePic:"/src/image/profile.jpeg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
     }
     ,   {
         id:2,
         name:"raju",
-        profilePic:"image/prof.jpg",
+        profilePic:"/src/image/prof.jpg",
         lastText:"helo",
-        lastTextTime:"12.02 PM"
+        lastTextTime:"01.02 PM"
     }
     ,   {
         id:3,
         name:"samu",
-        profilePic:"image/robin.jpg",
+        profilePic:"/src/image/robin.jpg",
         lastText:"helo",
-        lastTextTime:"12.02 PM"
+        lastTextTime:"03.02 PM"
     },
     {
         id:4,
         name:"priya",
-        profilePic:"image/prof.jpg",
+        profilePic:"/src/image/prof.jpg",
         lastText:"helo",
-        lastTextTime:"12.02 PM"
+        lastTextTime:"04.02 PM"
     },
     {
         id:5,
         name:"rasu",
-        profilePic:"image/prof.jpg",
+        profilePic:"/src/image/prof.jpg",
         lastText:"helo",
         lastTextTime:"12.02 PM"
     },
