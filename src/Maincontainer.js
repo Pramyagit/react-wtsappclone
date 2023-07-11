@@ -8,7 +8,9 @@ const Maincontainer = () => {
     <div className='mainContainer'>
         <Sidebar
         src={images}  />
-<Communicate  src={image}/>
+<Communicate  src={image}
+
+/>
     </div>
   )
 }

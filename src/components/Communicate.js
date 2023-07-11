@@ -5,8 +5,9 @@ import { HiMicrophone } from 'react-icons/hi'
 import{GrAttachment} from 'react-icons/gr'
 import {BsEmojiLaughingFill} from 'react-icons/bs'
 import { styled } from 'styled-components'
+import { messageList } from '../data'
 
-const Communicate = ({src}) => {
+const Communicate = ({src,userData}) => {
   // const[chat,setChat]=useState('')
   const handleChange=(e)=>{
     e.preventDefault();
@@ -14,9 +15,6 @@ const Communicate = ({src}) => {
   // useEffect((e)=>{
   //   (e.target.value)
   // },[]);
-  
-  
-  
   
   const MessagesBox=styled.div`
   display:flex;
@@ -47,7 +45,7 @@ margin:2px;
      <div className='person-communicate'>
          <div className='person-pro'>
           <img className='img' src={src} alt="photos"/>
-            <p>Name</p>
+            <p>name</p>
           </div>
             <div className='icons-pic'>
             <span><BiVideo/></span>
@@ -56,12 +54,15 @@ margin:2px;
             </div>
     </div>
     <MessagesBox>
-   <MessageDiv isYours={true}>
-     <Message isYours={true}>
-       Hello,how are you?
+      {messageList.map((msgData)=>(
+   <MessageDiv isYours={msgData.senderID === 0}>
+     <Message isYours={msgData.senderID === 0}>
+       {[msgData.text]}
      </Message>
    </MessageDiv>
-   <MessageDiv >
+      ))}
+
+   {/* <MessageDiv >
      <Message >
        fine...
      </Message>
@@ -75,7 +76,7 @@ margin:2px;
      <Message  isYours={true}>
 good....
      </Message>
-   </MessageDiv>
+   </MessageDiv> */}
    </MessagesBox>
 {/* 
    <div className="messageBox">

@@ -13,7 +13,7 @@ const Contact = ({userData,src}) => {
   return (
    <div className='chat-persons'>
    {/* <ProfileChat className="img" src={src} /> */}
-   <img className="img" src={src} alt=""/>
+   <img className="img" src={userData.profilePic} alt=""/>
     <div className='person-detail'>
     <p className='name'>{userData.name}</p>
     <p className='msg'>{userData.lastText}</p>
