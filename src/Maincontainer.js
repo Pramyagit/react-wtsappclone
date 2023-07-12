@@ -9,7 +9,6 @@ const Maincontainer = () => {
         <Sidebar
         src={images}  />
 <Communicate  src={image}
-
 />
     </div>
   )

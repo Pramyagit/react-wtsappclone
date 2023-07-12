@@ -230,6 +230,15 @@ padding:2px;
 
 color:white;
 }
+.chat-rooms{
+  background-color:transparent;
+  cursor:pointer;
+}
+/* contact */
+.containerimg{
+  display:flex;
+
+}
 
 /* communicate */
 .communicate{
@@ -253,7 +262,10 @@ color:white;
 }
 .person-pro{
   display:flex;
-  gap:10px;
+  gap:20px;
+  margin:10px;
+  align-items: center;
+  justify-content: center;
 }
 .icons-pic{
   display:flex;

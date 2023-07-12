@@ -7,15 +7,7 @@ import {BsEmojiLaughingFill} from 'react-icons/bs'
 import { styled } from 'styled-components'
 import { messageList } from '../data'
 
-const Communicate = ({src,userData}) => {
-  // const[chat,setChat]=useState('')
-  const handleChange=(e)=>{
-    e.preventDefault();
-  }
-  // useEffect((e)=>{
-  //   (e.target.value)
-  // },[]);
-  
+const Communicate = ({src,handleChats,id}) => {  
   const MessagesBox=styled.div`
   display:flex;
   height:100%;
@@ -43,9 +35,9 @@ margin:2px;
   return (
     <div className='communicate'>
      <div className='person-communicate'>
-         <div className='person-pro'>
-          <img className='img' src={src} alt="photos"/>
-            <p>name</p>
+         <div className='person-pro' onChange={handleChats} key={id}>
+          <img className='img' id='comuteImg' src={src} alt="photos"/>
+            <p className='profile-chatPerson' id='comuteName'>name</p>
           </div>
             <div className='icons-pic'>
             <span><BiVideo/></span>
@@ -55,7 +47,7 @@ margin:2px;
     </div>
     <MessagesBox>
       {messageList.map((msgData)=>(
-   <MessageDiv isYours={msgData.senderID === 0}>
+   <MessageDiv isYours={msgData.senderID === 0}> 
      <Message isYours={msgData.senderID === 0}>
        {[msgData.text]}
      </Message>
@@ -90,7 +82,7 @@ good....
     <div className="msg-typeBox">
         <div className='type-box'>
         <BsEmojiLaughingFill/>
-          <input type="" onChange={handleChange}></input>
+          <input type="text"></input>
           <p><GrAttachment/></p>
           <p><BiRupee/></p>
           <p><BiCamera/></p>

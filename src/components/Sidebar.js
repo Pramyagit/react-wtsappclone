@@ -31,11 +31,12 @@ const Sidebar = ({src}) => {
 <div className="archive">
   <span><BiSolidArchiveIn/></span>
 <span>Archived</span>
-<span class="badge">1</span>
+<span className="badge">1</span>
 </div>
 <div className='chat-rooms'>
   {contactList.map((userData)=>(
     <Contact 
+    id={userData.id}
     src={src}
     userData={userData}/>
   ))}
