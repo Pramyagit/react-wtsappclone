@@ -2,7 +2,7 @@
 import React from 'react';
 // import { styled } from 'styled-components';
 
-const Contact = ({userData}) => {
+const Contact = ({userData,key}) => {
   const handleClick=(userData)=>{
     const proName=userData.target.innerText;
     const prochat=userData.target.src;
@@ -20,9 +20,9 @@ proname.innerText=proName;
   handleChats();
 }
   return (
-   <div className='chat-persons' >
+   <div className='chat-persons' key={key}>
    {/* <ProfileChat className="img" src={src} /> */}
-   <div className="containerimg"onClick={handleClick}>
+   <div className="containerimg"onClick={handleClick} >
    <img className="img" src={userData.profilePic} alt=""/>
     <p className='name'>{userData.name}</p>
    </div>

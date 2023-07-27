@@ -46,9 +46,9 @@ margin:2px;
             </div>
     </div>
     <MessagesBox>
-      {messageList.map((msgData)=>(
-   <MessageDiv isYours={msgData.senderID === 0}> 
-     <Message isYours={msgData.senderID === 0}>
+      {messageList.map((msgData,id)=>(
+   <MessageDiv key={id} isYours={msgData.senderID === 0}> 
+     <Message key={id} isYours={msgData.senderID === 0}>
        {[msgData.text]}
      </Message>
    </MessageDiv>
