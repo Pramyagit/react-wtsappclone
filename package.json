@@ -1,6 +1,6 @@
 {
   "name": "wtsappclone",
-  "homepage": "http://pramyagit.github.io/whatsapp-reactclone",
+  "homepage": "https://pramyagit.github.io/reactjs-wtsappclone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.0.0"
   }
 }
