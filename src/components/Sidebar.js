@@ -34,7 +34,7 @@ const Sidebar = ({src}) => {
 <span className="badge">1</span>
 </div>
 <div className='chat-rooms'>
-  {contactList.map((userData,key)=>(
+  {contactList.map((userData)=>(
     <Contact 
     key={userData.id}
     src={src}
